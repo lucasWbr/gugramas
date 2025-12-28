@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "titulo": "Grama São Carlos - Jardim Residencial",
+    "tipoDeGrama": "sao-carlos",
+    "imagens": [
+      "/images/gallery/bordaDePiscinaCarazinho/bordaDePiscina1.png",
+      "/images/gallery/bordaDePiscinaCarazinho/bordaDePiscina2.png"
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "Grama São Carlos - Área de Lazer",
+    "tipoDeGrama": "sao-carlos",
+    "imagens": ["/images/gallery/bordaDePiscinaCarazinho/bordaDePiscina1.png"]
+  },
+  {
+    "id": 3,
+    "titulo": "Grama Esmeralda - Jardim Ornamental",
+    "tipoDeGrama": "esmeralda",
+    "imagens": ["/images/gallery/bordaDePiscinaCarazinho/bordaDePiscina2.png"]
+  },
+  {
+    "id": 4,
+    "titulo": "Grama Esmeralda - Entrada Residencial",
+    "tipoDeGrama": "esmeralda",
+    "imagens": [
+      "/images/gallery/bordaDePiscinaCarazinho/bordaDePiscina1.png",
+      "/images/gallery/bordaDePiscinaCarazinho/bordaDePiscina2.png"
+    ]
+  },
+  {
+    "id": 5,
+    "titulo": "Grama São Carlos - Campo Esportivo",
+    "tipoDeGrama": "sao-carlos",
+    "imagens": ["/images/gallery/bordaDePiscinaCarazinho/bordaDePiscina1.png"]
+  },
+  {
+    "id": 6,
+    "titulo": "Grama Esmeralda - Borda de Piscina",
+    "tipoDeGrama": "esmeralda",
+    "imagens": [
+      "/images/gallery/bordaDePiscinaCarazinho/bordaDePiscina1.png",
+      "/images/gallery/bordaDePiscinaCarazinho/bordaDePiscina2.png"
+    ]
+  }
+]

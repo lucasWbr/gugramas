@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #161d0a;
+  --foreground: #161d0a;
+  --dark-green: #161d0a;
+  --light-green: #90ee90;
+  --dark-green-text: #161d0a;
+  --light-green-hover: #7dd87d;
+  --dark-green-box: #161d0a;
 }
 
 @theme inline {
@@ -10,17 +15,81 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-albert-sans: var(--font-albert-sans);
+  --color-dark-green: #161d0a;
+  --color-light-green: #a6df65;
+  --color-dark-green-text: #161d0a;
+  --color-light-green-hover: #a6df65;
+  --color-dark-green-box: #161d0a;
 }
 
 body {
-  background: var(--background);
+  background: #161d0a;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-dark-green {
+  background-color: #161d0a;
+}
+
+.bg-light-green {
+  background-color: #a6df65;
+}
+
+.text-dark-green-text {
+  color: #161d0a;
+}
+
+.text-light-green {
+  color: #a6df65;
+}
+
+.bg-dark-green-box {
+  background-color: #161d0a;
+}
+
+.hover\:text-light-green-hover:hover {
+  color: #7dd87d;
+}
+
+.hover\:bg-light-green-hover:hover {
+  background-color: #a6df65;
+}
+
+.font-albert-sans {
+  font-family: var(--font-albert-sans), sans-serif;
+}
+
+/* PageEnd overlap - sempre metade da altura do pageEnd (218px / 2 = 109px) */
+/* O pageEnd tem altura de 218px, então metade é 109px */
+/* Como o SVG é responsivo, usamos um valor que seja aproximadamente metade em diferentes tamanhos */
+.page-end-overlap {
+  margin-top: -109px; /* Metade de 218px */
+}
+
+/* Em telas menores, reduzimos o overlap para não sobrepor demais o pageEnd */
+@media (max-width: 768px) {
+  .page-end-overlap {
+    margin-top: -40px; /* Reduzido para não sobrepor demais o pageEnd em telas menores */
+  }
+}
+
+/* Em telas muito pequenas, reduzimos ainda mais o overlap */
+@media (max-width: 480px) {
+  .page-end-overlap {
+    margin-top: -30px; /* Reduzido ainda mais para não sobrepor demais o pageEnd em telas muito pequenas */
+  }
 }
