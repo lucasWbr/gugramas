@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
 import { useParams } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -19,19 +19,16 @@ interface GaleriaItem {
 export default function GaleriaItemPage() {
   const params = useParams();
   const id = params?.id as string;
-  const [item, setItem] = useState<GaleriaItem | undefined>(undefined);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    if (id) {
-      const itemId = parseInt(id);
-      const foundItem = (galeriaData as GaleriaItem[]).find(
-        (item) => item.id === itemId
-      );
-      setItem(foundItem);
-      setIsLoading(false);
-    }
+  
+  const item = useMemo(() => {
+    if (!id) return undefined;
+    const itemId = parseInt(id);
+    return (galeriaData as GaleriaItem[]).find(
+      (item) => item.id === itemId
+    );
   }, [id]);
+  
+  const isLoading = id === undefined;
 
   if (isLoading) {
     return (

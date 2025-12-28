@@ -50,10 +50,7 @@ export default function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between xl:justify-between gap-4">
-        <Link
-          href="/"
-          className="flex items-center gap-2 shrink-0"
-        >
+        <Link href="/" className="flex items-center gap-2 shrink-0">
           <Image
             src="/logo.svg"
             alt="Gugramas Logo"

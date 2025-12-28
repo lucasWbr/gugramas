@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import pageEndIcon from "@/assets/images/icons/pageEnd.svg";
 import grassIcon from "@/assets/images/icons/grass.svg";
@@ -10,8 +10,8 @@ import gramaEsmeraldaImage from "@/assets/images/index/gramaEsmeralda.png";
 
 interface GrassData {
   nome: string;
-  icon: any;
-  image: any;
+  icon: StaticImageData;
+  image: StaticImageData;
   caracteristicas: {
     titulo: string;
     itens: string[];

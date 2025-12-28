@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
+import { useState, useMemo, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Header from "@/components/Header";
@@ -22,18 +22,14 @@ function GaleriaContent() {
   const searchParams = useSearchParams();
   const tipoInicial = searchParams.get("tipo") || "todos";
   const [filtroTipo, setFiltroTipo] = useState<string>(tipoInicial);
-  const [itensFiltrados, setItensFiltrados] = useState<GaleriaItem[]>([]);
 
-  useEffect(() => {
+  const itensFiltrados = useMemo(() => {
     if (filtroTipo === "todos") {
-      setItensFiltrados(galeriaData as GaleriaItem[]);
-    } else {
-      setItensFiltrados(
-        (galeriaData as GaleriaItem[]).filter(
-          (item) => item.tipoDeGrama === filtroTipo
-        )
-      );
+      return galeriaData as GaleriaItem[];
     }
+    return (galeriaData as GaleriaItem[]).filter(
+      (item) => item.tipoDeGrama === filtroTipo
+    );
   }, [filtroTipo]);
 
   const getIcon = (tipo: string) => {
