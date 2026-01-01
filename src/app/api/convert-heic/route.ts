@@ -44,7 +44,8 @@ export async function GET(request: NextRequest) {
       : Buffer.from(outputBuffer as ArrayBuffer);
 
     // Retorna a imagem convertida
-    return new NextResponse(buffer, {
+    // NextResponse aceita Uint8Array, ArrayBuffer ou string
+    return new NextResponse(new Uint8Array(buffer), {
       headers: {
         "Content-Type": "image/jpeg",
         "Cache-Control": "public, max-age=31536000, immutable",
