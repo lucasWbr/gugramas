@@ -77,19 +77,19 @@ html {
 /* O pageEnd tem altura de 218px, então metade é 109px */
 /* Como o SVG é responsivo, usamos um valor que seja aproximadamente metade em diferentes tamanhos */
 .page-end-overlap {
-  margin-top: -109px; /* Metade de 218px */
+  margin-top: -160px; /* Metade de 218px */
 }
 
-/* Em telas menores, reduzimos o overlap para não sobrepor demais o pageEnd */
+/* Em telas menores, aumentamos o overlap para sobrepor mais o pageEnd */
 @media (max-width: 768px) {
   .page-end-overlap {
-    margin-top: -40px; /* Reduzido para não sobrepor demais o pageEnd em telas menores */
+    margin-top: -65px; /* Aumentado para sobrepor mais o pageEnd em telas menores */
   }
 }
 
-/* Em telas muito pequenas, reduzimos ainda mais o overlap */
+/* Em telas muito pequenas, aumentamos ainda mais o overlap */
 @media (max-width: 480px) {
   .page-end-overlap {
-    margin-top: -30px; /* Reduzido ainda mais para não sobrepor demais o pageEnd em telas muito pequenas */
+    margin-top: -50px; /* Aumentado ainda mais para sobrepor mais o pageEnd em telas muito pequenas */
   }
 }

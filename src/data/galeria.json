@@ -1,47 +1,278 @@
 [
   {
     "id": 1,
-    "titulo": "Grama São Carlos - Jardim Residencial",
+    "titulo": "Residência - Antes e Depois",
     "tipoDeGrama": "sao-carlos",
-    "imagens": [
-      "/images/gallery/bordaDePiscinaCarazinho/bordaDePiscina1.png",
-      "/images/gallery/bordaDePiscinaCarazinho/bordaDePiscina2.png"
-    ]
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Alves antes .JPG",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Alves depois.JPG",
+    "imagens": []
   },
   {
     "id": 2,
-    "titulo": "Grama São Carlos - Área de Lazer",
-    "tipoDeGrama": "sao-carlos",
-    "imagens": ["/images/gallery/bordaDePiscinaCarazinho/bordaDePiscina1.png"]
+    "titulo": "Residência - Antes e Depois",
+    "tipoDeGrama": "esmeralda",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Andressa antes.JPG",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Andressa depois.JPG",
+    "imagens": []
   },
   {
     "id": 3,
-    "titulo": "Grama Esmeralda - Jardim Ornamental",
-    "tipoDeGrama": "esmeralda",
-    "imagens": ["/images/gallery/bordaDePiscinaCarazinho/bordaDePiscina2.png"]
+    "titulo": "Residência - Antes e Depois",
+    "tipoDeGrama": "sao-carlos",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Cássio antes.HEIC",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Cássio depois .HEIC",
+    "imagens": []
   },
   {
     "id": 4,
-    "titulo": "Grama Esmeralda - Entrada Residencial",
+    "titulo": "Residência",
     "tipoDeGrama": "esmeralda",
-    "imagens": [
-      "/images/gallery/bordaDePiscinaCarazinho/bordaDePiscina1.png",
-      "/images/gallery/bordaDePiscinaCarazinho/bordaDePiscina2.png"
-    ]
+    "temAntesDepois": false,
+    "imagens": ["/images/gallery/Antes e Depois Paisagismo/Dani depois.HEIC"]
   },
   {
     "id": 5,
-    "titulo": "Grama São Carlos - Campo Esportivo",
+    "titulo": "Residência - Antes e Depois",
     "tipoDeGrama": "sao-carlos",
-    "imagens": ["/images/gallery/bordaDePiscinaCarazinho/bordaDePiscina1.png"]
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Danigay antes.JPG",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Danigay depois.JPG",
+    "imagens": []
   },
   {
     "id": 6,
-    "titulo": "Grama Esmeralda - Borda de Piscina",
+    "titulo": "Residência - Antes e Depois",
     "tipoDeGrama": "esmeralda",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Fidla antes.HEIC",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Fidla depois .HEIC",
+    "imagens": []
+  },
+  {
+    "id": 7,
+    "titulo": "Residência - Antes e Depois",
+    "tipoDeGrama": "sao-carlos",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Fio antes.JPG",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Fio depois.JPG",
+    "imagens": []
+  },
+  {
+    "id": 8,
+    "titulo": "Residência - Antes e Depois",
+    "tipoDeGrama": "esmeralda",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Fraida antes.jpg",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Fraida depois.jpg",
+    "imagens": []
+  },
+  {
+    "id": 9,
+    "titulo": "Residência - Fundos Antes e Depois",
+    "tipoDeGrama": "sao-carlos",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Jé fundos antes.JPG",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Je fundos depois.jpg",
+    "imagens": []
+  },
+  {
+    "id": 10,
+    "titulo": "Residência - Frente Antes e Depois",
+    "tipoDeGrama": "esmeralda",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Jé frente antes.JPG",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Je frente depois.jpg",
+    "imagens": []
+  },
+  {
+    "id": 11,
+    "titulo": "Piscina - Piscina Antes e Depois",
+    "tipoDeGrama": "sao-carlos",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Jé piscina depois.jpg",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Jé pis dps.jpg",
+    "imagens": []
+  },
+  {
+    "id": 12,
+    "titulo": "Residência - Antes e Depois",
+    "tipoDeGrama": "esmeralda",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Jorge antes.JPG",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Jorge depois.JPG",
+    "imagens": []
+  },
+  {
+    "id": 13,
+    "titulo": "Residência - Antes e Depois",
+    "tipoDeGrama": "sao-carlos",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Júnior antes.HEIC",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Júnior depois.HEIC",
+    "imagens": []
+  },
+  {
+    "id": 14,
+    "titulo": "Praça municipal",
+    "tipoDeGrama": "sao-carlos",
+    "temAntesDepois": false,
+    "imagens": ["/images/gallery/Antes e Depois Paisagismo/Praça palmeira.jpg"]
+  },
+  {
+    "id": 15,
+    "titulo": "Residência - Antes e Depois",
+    "tipoDeGrama": "sao-carlos",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Mariela(1).HEIC",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Mariela.HEIC",
+    "imagens": []
+  },
+  {
+    "id": 16,
+    "titulo": "Residência - Antes e Depois",
+    "tipoDeGrama": "esmeralda",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Palmeira antes.JPG",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Palmeira depois.JPG",
+    "imagens": []
+  },
+  {
+    "id": 17,
+    "titulo": "Residência - Antes e Depois",
+    "tipoDeGrama": "sao-carlos",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Pinto depois.HEIC",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Pinto antes.HEIC",
+    "imagens": []
+  },
+  {
+    "id": 18,
+    "titulo": "Residência - Antes e Depois",
+    "tipoDeGrama": "esmeralda",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Rech antes.HEIC",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Rech depois.HEIC",
+    "imagens": []
+  },
+  {
+    "id": 20,
+    "titulo": "Comércio - Antes e Depois",
+    "tipoDeGrama": "esmeralda",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Sicredi antes.JPG",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Sicredi depois.JPG",
+    "imagens": []
+  },
+  {
+    "id": 22,
+    "titulo": "Residência - Antes e Depois",
+    "tipoDeGrama": "esmeralda",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Tarcísio antes.jpg",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Tarcísio depois.jpg",
+    "imagens": []
+  },
+  {
+    "id": 23,
+    "titulo": "Residência - Antes e Depois",
+    "tipoDeGrama": "sao-carlos",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Tesouras antes.HEIC",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Tesouras depois.HEIC",
+    "imagens": []
+  },
+  {
+    "id": 24,
+    "titulo": "Residência - Antes e Depois",
+    "tipoDeGrama": "esmeralda",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Toisso depois.jpg",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Toisso antes.jpg",
+    "imagens": []
+  },
+  {
+    "id": 25,
+    "titulo": "Residência - Antes e Depois",
+    "tipoDeGrama": "sao-carlos",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Ximite antes frente.jpg",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Ximite depois.HEIC",
+    "imagens": []
+  },
+  {
+    "id": 26,
+    "titulo": "Residência - Antes e Depois",
+    "tipoDeGrama": "sao-carlos",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Ximite antes fundos.HEIC",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Ximite depois fundos.HEIC",
+    "imagens": []
+  },
+  {
+    "id": 27,
+    "titulo": "Residência - Antes e Depois",
+    "tipoDeGrama": "sao-carlos",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Ximite antes piscina.HEIC",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Ximite depois piscina.HEIC",
+    "imagens": []
+  },
+  {
+    "id": 28,
+    "titulo": "Campo - Antes e Depois",
+    "tipoDeGrama": "sao-carlos",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Erosão e Funcionalidade/Campo.JPG",
+    "imagemDepois": "/images/gallery/Erosão e Funcionalidade/Campo pronto.JPG",
+    "imagens": []
+  },
+  {
+    "id": 31,
+    "titulo": "Rodovia em erosão",
+    "tipoDeGrama": "esmeralda",
+    "temAntesDepois": false,
     "imagens": [
-      "/images/gallery/bordaDePiscinaCarazinho/bordaDePiscina1.png",
-      "/images/gallery/bordaDePiscinaCarazinho/bordaDePiscina2.png"
+      "/images/gallery/Erosão e Funcionalidade/Ers330.HEIC",
+      "/images/gallery/Erosão e Funcionalidade/Era330.HEIC",
+      "/images/gallery/Erosão e Funcionalidade/Ers 330.HEIC",
+      "/images/gallery/Erosão e Funcionalidade/Ers330(1).HEIC",
+      "/images/gallery/Erosão e Funcionalidade/Ers330(2).HEIC",
+      "/images/gallery/Erosão e Funcionalidade/Ers buraco .HEIC",
+      "/images/gallery/Erosão e Funcionalidade/Ers.JPG",
+      "/images/gallery/Erosão e Funcionalidade/Ers(1).JPG"
+    ]
+  },
+  {
+    "id": 34,
+    "titulo": "Comércio - Manutenção",
+    "tipoDeGrama": "sao-carlos",
+    "temAntesDepois": false,
+    "imagens": ["/images/gallery/Erosão e Funcionalidade/Manutenção bb.jpg"]
+  },
+  {
+    "id": 35,
+    "titulo": "Indústria",
+    "tipoDeGrama": "esmeralda",
+    "temAntesDepois": false,
+    "imagens": [
+      "/images/gallery/Erosão e Funcionalidade/Whey 2",
+      "/images/gallery/Erosão e Funcionalidade/Whey.JPG",
+      "/images/gallery/Erosão e Funcionalidade/Whey(1).JPG",
+      "/images/gallery/Erosão e Funcionalidade/Whey caixa antes",
+      "/images/gallery/Erosão e Funcionalidade/Whey caixa depois",
+      "/images/gallery/Erosão e Funcionalidade/Whey drone.PNG",
+      "/images/gallery/Erosão e Funcionalidade/Whey ete 2.jpg",
+      "/images/gallery/Erosão e Funcionalidade/Whey ETE.jpg",
+      "/images/gallery/Erosão e Funcionalidade/Whey talude antes.jpg",
+      "/images/gallery/Erosão e Funcionalidade/Whey talude depois.HEIC",
+      "/images/gallery/Erosão e Funcionalidade/Whey talude depois.jpg",
+      "/images/gallery/Erosão e Funcionalidade/Whey_.jpg",
+      "/images/gallery/Erosão e Funcionalidade/Whey.PNG",
+      "/images/gallery/Erosão e Funcionalidade/Whey(1).PNG",
+      "/images/gallery/Erosão e Funcionalidade/Whey(2).PNG"
     ]
   }
 ]

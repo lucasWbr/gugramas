@@ -3,8 +3,6 @@ import bagIcon from "@/assets/images/icons/bag.svg";
 import waterIcon from "@/assets/images/icons/water.svg";
 import flowerIcon from "@/assets/images/icons/flower.svg";
 import pageEndVerdeClaroIcon from "@/assets/images/icons/pageEndVerdeClaro.svg";
-import service1Image from "@/assets/images/index/service1.png";
-import service2Image from "@/assets/images/index/service2.png";
 
 export default function ServicesSection() {
   return (
@@ -44,29 +42,52 @@ export default function ServicesSection() {
 
             <div className="space-y-4 text-[#002210] text-lg leading-relaxed font-albert-sans">
               <p>
-                Somos especialistas em transformar espaços com soluções
-                completas de paisagismo e jardinagem. Oferecemos{" "}
-                <span className="font-bold">venda</span>,{" "}
-                <span className="font-bold"> plantio</span> e{" "}
-                <span className="font-bold">manutenção</span> de gramas além de
-                criação de jardins e projetos de paisagismo.
+                Trabalhamos das mais diversas formas, buscando atender a
+                necessidade particular do consumidor final, podendo apenas
+                fornecer o produto, fornecer e entregar no local combinado, ou
+                até mesmo sistema completo de plantio de grama, que inclui:
+                <span className="font-bold">
+                  {" "}
+                  Estudo da viabilidade de execução
+                </span>{" "}
+                para verificar possíveis irregularidades e desafios do projeto.
+                <span className="font-bold">
+                  {" "}
+                  Aptidão ao tipo de solo e escolha do tipo da grama
+                </span>
+                : extremamente necessário conhecer o local de plantio para
+                verificar horas luz, umidade, sombreamento e necessidade que o
+                plantio da grama busca solucionar.
               </p>
               <p>
-                Também realizamos serviços de manutenção integral, como{" "}
-                <span className="font-bold">corte</span>,
-                <span className="font-bold"> adubação</span> e{" "}
-                <span className="font-bold">limpeza</span>, garantindo que seu
-                jardim ou área permaneça sempre saudável e bonita em todas as
-                estações. Trabalhamos com preparo do solo, recuperação de
-                gramados e podas especializadas, atendendo residências e
-                empresas.
+                {" "}
+                <span className="font-bold">Retirada de escombros</span>, restos
+                de matérias e qualquer resíduo que possa atrapalhar o
+                enraizamento e estética do gramado.{" "}
+                <span className="font-bold">
+                  Avaliar a necessidade do uso de herbicidas para controlar o
+                  crescimento de ervas daninhas
+                </span>
+                , invasoras ou qualquer planta que possa comprometer fisicamente
+                o gramado. <span className="font-bold">Preparo do solo</span>:
+                após a análise laboratorial são incorporados os matérias
+                necessário para dar plenas condições ao gramado enraizar e
+                crescer de forma saudável e vistoso, material esse podendo ser
+                químico ou orgânico.{" "}
+                <span className="font-bold">Nivelamento</span> manual ou
+                mecânico dependendo do tamanho do projeto.
               </p>
               <p>
-                Situados em Chapada-RS, garantimos qualidade em nossos serviços
-                providenciados por uma equipe qualificada.
-              </p>
-              <p className="font-bold text-xl">
-                Da terra à grama, cuidamos de tudo para você.
+                {" "}
+                <span className="font-bold">Plantio da grama</span> de forma
+                manual, atento aos detalhes e acabamentos de forma ágil visando
+                a necessidade de plantio imediato para não perder a qualidade do
+                produto.{" "}
+                <span className="font-bold">Manutenção do gramado</span>,
+                atendendo de forma humanizada todas as necessidades do cliente
+                para garantir um gramado de qualidade. Além disso trabalhamos
+                com a execução de paisagismo e jardins para embelezar ainda mais
+                o ambiente com vasos, pedras e plantas dos mais diversos tipos.
               </p>
             </div>
           </div>
@@ -74,7 +95,7 @@ export default function ServicesSection() {
           <div className="flex-1 flex flex-col gap-4">
             <div className="rounded-2xl flex-1 overflow-hidden relative min-h-[200px]">
               <Image
-                src={service1Image}
+                src="/images/gallery/Erosão e Funcionalidade/Carga.JPG"
                 alt="Serviço 1"
                 fill
                 className="object-cover"
@@ -82,7 +103,7 @@ export default function ServicesSection() {
             </div>
             <div className="rounded-2xl flex-1 overflow-hidden relative min-h-[200px]">
               <Image
-                src={service2Image}
+                src="/images/gallery/Erosão e Funcionalidade/Manutenção bb.jpg"
                 alt="Serviço 2"
                 fill
                 className="object-cover"

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import pageEndIcon from "@/assets/images/icons/pageEnd.svg";
-import aboutImage from "@/assets/images/index/about.png";
 
 export default function AboutSection() {
   return (
@@ -10,7 +9,7 @@ export default function AboutSection() {
           <div className="flex-1 w-full">
             <div className="rounded-2xl h-96 w-full overflow-hidden relative">
               <Image
-                src={aboutImage}
+                src="/images/gallery/Erosão e Funcionalidade/Ers(2).JPG"
                 alt="Sobre a Gugramas"
                 fill
                 className="object-cover"
@@ -19,33 +18,33 @@ export default function AboutSection() {
           </div>
 
           <div className="flex-1 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-[#A6DF65] mb-6 flex items-center justify-center">
-              Sobre
+            <h2 className="text-4xl md:text-5xl font-bold text-[#A6DF65] mb-6 flex items-center justify-center">
+              Quem somos
             </h2>
 
             <div className="space-y-4 text-[#A6DF65] text-lg leading-relaxed font-albert-sans">
               <p>
-                A Gugramas é uma empresa especializada em paisagismo e
-                jardinagem, localizada em Chapada-RS. Com anos de experiência no
-                mercado, trazemos a natureza para o seu ambiente com qualidade,
-                dedicação e expertise.
+                A Gugramas é uma empresa especializada em comercio, plantio e
+                manutenção de todo tipo de gramados, localizada no município de
+                Chapada-RS, atua a mais de 15 anos no mercado de gramas levando
+                compromisso e seriedade ao consumidor final. Teve início
+                atendendo a localidade de chapada e hoje atende as mais
+                diversificadas obras em todo o Rio Grande do Sul e região sul de
+                Santa Catarina.
               </p>
               <p>
-                Somos especialistas em transformar espaços com soluções
-                completas de paisagismo e jardinagem. Oferecemos venda, plantio
-                e manutenção de gramas, além de criação de jardins e projetos de
-                paisagismo personalizados.
+                Conta com uma equipe própria, experiente e capacitada atuando a
+                anos no mercado com compromisso e pontualidade nos projetos.
+                Trabalhamos atendendo desde pequenas obras residências visando a
+                estética e bem estar do cliente, até grandes obras industriais,
+                comerciais e rodoviárias, tendo em vista sempre atender as
+                necessidades individuais de cada cliente.
               </p>
               <p>
-                Nossa equipe qualificada trabalha com preparo do solo,
-                recuperação de gramados e podas especializadas, atendendo
-                residências e empresas. Realizamos serviços de manutenção
-                integral, como corte, adubação e limpeza, garantindo que seu
-                jardim ou área permaneça sempre saudável e bonita em todas as
-                estações.
-              </p>
-              <p className="font-semibold">
-                Da terra à grama, cuidamos de tudo para você viver melhor!
+                Contamos também com frota própria para deslocamento, fretes e
+                descarregamento da grama de forma mecanizada, visando manter o
+                compromisso com a pontualidade e a qualidade do produto até o
+                consumidor final.
               </p>
             </div>
           </div>

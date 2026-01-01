@@ -2,17 +2,24 @@
 
 import { useMemo } from "react";
 import { useParams } from "next/navigation";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Image from "next/image";
 import Link from "next/link";
 import pageEndIcon from "@/assets/images/icons/pageEnd.svg";
+import BeforeAfterSlider from "@/components/BeforeAfterSlider";
+import ImageGrid from "@/components/ImageGrid";
 import galeriaData from "@/data/galeria.json";
 
 interface GaleriaItem {
   id: number;
   titulo: string;
   tipoDeGrama: string;
+  temAntesDepois?: boolean;
+  imagemAntes?: string;
+  imagemDepois?: string;
+  imagensAntes?: string[];
+  imagensDepois?: string[];
   imagens: string[];
 }
 
@@ -82,25 +89,47 @@ export default function GaleriaItemPage() {
             {item.titulo}
           </h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            {item.imagens.map((imagem, index) => (
-              <div
-                key={index}
-                className="rounded-2xl overflow-hidden relative h-64 md:h-96 w-full"
-              >
-                <Image
-                  src={imagem}
-                  alt={`${item.titulo} - Imagem ${index + 1}`}
-                  fill
-                  className="object-cover"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%23A6DF65' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23002210' font-size='20'%3EImagem%3C/text%3E%3C/svg%3E";
-                  }}
+          {item.temAntesDepois && item.imagemAntes && item.imagemDepois ? (
+            <div className="mb-8 space-y-6">
+              {/* Slider principal com primeira imagem antes/depois */}
+              <div className="rounded-2xl overflow-hidden relative w-full max-w-4xl mx-auto aspect-video">
+                <BeforeAfterSlider
+                  beforeImage={item.imagemAntes}
+                  afterImage={item.imagemDepois}
+                  beforeLabel="Antes"
+                  afterLabel="Depois"
+                  className="rounded-2xl"
                 />
               </div>
-            ))}
-          </div>
+              
+              {/* Sliders adicionais se houver múltiplas imagens antes/depois */}
+              {item.imagensAntes && item.imagensDepois && item.imagensAntes.length > 1 && (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                  {item.imagensAntes.slice(1).map((imagemAntes, index) => {
+                    const imagemDepois = item.imagensDepois?.[index + 1];
+                    if (!imagemDepois) return null;
+                    
+                    return (
+                      <div
+                        key={index}
+                        className="rounded-2xl overflow-hidden relative w-full aspect-video"
+                      >
+                        <BeforeAfterSlider
+                          beforeImage={imagemAntes}
+                          afterImage={imagemDepois}
+                          beforeLabel="Antes"
+                          afterLabel="Depois"
+                          className="rounded-2xl"
+                        />
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          ) : (
+            <ImageGrid imagens={item.imagens} titulo={item.titulo} />
+          )}
         </div>
 
         <div className="w-screen relative left-1/2 -ml-[50vw]">

@@ -98,7 +98,9 @@ export default async function GrassPage({
       <div className="min-h-screen bg-dark-green overflow-x-hidden">
         <Header />
         <main className="flex items-center justify-center min-h-[60vh]">
-          <p className="text-light-green text-2xl">Tipo de grama não encontrado</p>
+          <p className="text-light-green text-2xl">
+            Tipo de grama não encontrado
+          </p>
         </main>
         <Footer />
       </div>
@@ -164,7 +166,7 @@ export default async function GrassPage({
             <p className="text-2xl md:text-3xl font-bold mt-6">
               {grass.callToAction}
             </p>
-            
+
             <div className="text-center mt-8">
               <Link
                 href={`/galeria?tipo=${tipo}`}
@@ -192,4 +194,3 @@ export default async function GrassPage({
     </div>
   );
 }
-

@@ -43,20 +43,20 @@ export default function Header() {
 
   return (
     <header
-      className={`py-4 transition-all duration-300 ${
+      className={`py-2 transition-all duration-300 ${
         isScrolled
-          ? "bg-white shadow-lg fixed top-0 left-0 right-0 z-50"
-          : "bg-[#A6DF65] relative"
+          ? "bg-white fixed top-0 left-0 right-0 z-50"
+          : "bg-white relative"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between xl:justify-between gap-4">
-        <Link href="/" className="flex items-center gap-2 shrink-0">
+        <Link href="/" className="flex items-center gap-2 shrink-0 ">
           <Image
-            src="/logo.svg"
+            src="/Logo_em_Alta.png"
             alt="Gugramas Logo"
-            width={150}
-            height={50}
-            className="h-auto drop-shadow-lg"
+            width={120}
+            height={30}
+            className=""
             priority
           />
         </Link>
@@ -148,11 +148,11 @@ export default function Header() {
             href="https://wa.me/5554984346552"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#002210] text-[#9bdb4f] px-4 py-2 rounded-full flex items-center gap-2 hover:text-white transition-colors font-albert-sans font-extrabold shrink-0 shadow-lg group"
+            className="bg-[#002210] text-[#9bdb4f] px-6 py-3 rounded-full flex items-center gap-3 hover:text-white transition-colors font-albert-sans font-extrabold shrink-0 shadow-lg group text-lg"
           >
             <svg
-              width="20"
-              height="20"
+              width="26"
+              height="26"
               viewBox="0 0 24 24"
               fill="currentColor"
               className="text-[#9bdb4f] group-hover:text-white transition-colors"

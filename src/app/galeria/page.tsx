@@ -2,19 +2,24 @@
 
 import { useState, useMemo, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import pageEndIcon from "@/assets/images/icons/pageEnd.svg";
 import grassIcon from "@/assets/images/icons/grass.svg";
 import leafIcon from "@/assets/images/icons/leaf.svg";
+import GaleriaCard from "@/components/GaleriaCard";
 import galeriaData from "@/data/galeria.json";
 
 interface GaleriaItem {
   id: number;
   titulo: string;
   tipoDeGrama: string;
+  temAntesDepois?: boolean;
+  imagemAntes?: string;
+  imagemDepois?: string;
+  imagensAntes?: string[];
+  imagensDepois?: string[];
   imagens: string[];
 }
 
@@ -31,14 +36,6 @@ function GaleriaContent() {
       (item) => item.tipoDeGrama === filtroTipo
     );
   }, [filtroTipo]);
-
-  const getIcon = (tipo: string) => {
-    return tipo === "sao-carlos" ? leafIcon : grassIcon;
-  };
-
-  const getNomeGrama = (tipo: string) => {
-    return tipo === "sao-carlos" ? "São Carlos" : "Esmeralda";
-  };
 
   return (
     <div className="min-h-screen bg-dark-green overflow-x-hidden">
@@ -102,42 +99,7 @@ function GaleriaContent() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {itensFiltrados.map((item) => (
-              <Link
-                key={item.id}
-                href={`/galeria/${item.id}`}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-pointer block"
-              >
-                <div className="relative h-64 w-full">
-                  <Image
-                    src={item.imagens[0] || "/images/gallery/placeholder.png"}
-                    alt={item.titulo}
-                    fill
-                    className="object-cover"
-                    onError={(e) => {
-                      // Fallback para uma imagem placeholder se a imagem não existir
-                      const target = e.target as HTMLImageElement;
-                      target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%23A6DF65' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23002210' font-size='20'%3EImagem%3C/text%3E%3C/svg%3E";
-                    }}
-                  />
-                </div>
-                <div className="p-4">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Image
-                      src={getIcon(item.tipoDeGrama)}
-                      alt={getNomeGrama(item.tipoDeGrama)}
-                      width={24}
-                      height={24}
-                      className="w-6 h-6"
-                    />
-                    <span className="text-sm font-semibold text-[#002210] font-albert-sans">
-                      {getNomeGrama(item.tipoDeGrama)}
-                    </span>
-                  </div>
-                  <h3 className="text-lg font-bold text-dark-green-text font-albert-sans">
-                    {item.titulo}
-                  </h3>
-                </div>
-              </Link>
+              <GaleriaCard key={item.id} item={item} />
             ))}
           </div>
 

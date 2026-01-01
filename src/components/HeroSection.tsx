@@ -4,7 +4,7 @@ import toolsIcon from "@/assets/images/icons/tools.svg";
 import vaseIcon from "@/assets/images/icons/vase.svg";
 import leafIcon from "@/assets/images/icons/leaf.svg";
 import pageEndIcon from "@/assets/images/icons/pageEnd.svg";
-import teste1Image from "@/assets/images/index/teste1.png";
+import BeforeAfterSlider from "./BeforeAfterSlider";
 
 export default function HeroSection() {
   return (
@@ -62,13 +62,15 @@ export default function HeroSection() {
           </div>
 
           <div className="flex-1 w-full relative">
-            <div className="absolute top-4 right-[-12] lg:right-[-12] w-3/4 lg:w-3/4 mx-auto lg:mx-0 lg:ml-auto h-full bg-[#002210] rounded-2xl -z-10"></div>
-            <div className="relative rounded-2xl h-128 w-3/4 mx-auto lg:mx-0 lg:ml-auto overflow-hidden">
-              <Image
-                src={teste1Image}
-                alt="Gugramas"
-                fill
-                className="object-cover"
+            <div className="absolute top-4 right-[-12] lg:right-[-12] w-4/5 lg:w-4/5 mx-auto lg:mx-0 lg:ml-auto h-full bg-[#002210] rounded-2xl -z-10"></div>
+            <div className="relative rounded-2xl h-128 w-4/5 mx-auto lg:mx-0 lg:ml-auto overflow-hidden">
+              <BeforeAfterSlider
+                beforeImage="/images/gallery/Antes e Depois Paisagismo/Jé piscina depois.jpg"
+                afterImage="/images/gallery/Antes e Depois Paisagismo/Jé pis dps.jpg"
+                beforeLabel="Antes"
+                afterLabel="Depois"
+                className="rounded-2xl"
+                forceCover={true}
               />
             </div>
           </div>
