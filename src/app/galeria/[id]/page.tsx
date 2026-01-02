@@ -15,6 +15,7 @@ interface GaleriaItem {
   id: number;
   titulo: string;
   tipoDeGrama: string;
+  tipoObra?: string;
   temAntesDepois?: boolean;
   imagemAntes?: string;
   imagemDepois?: string;

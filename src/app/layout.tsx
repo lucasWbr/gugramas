@@ -19,9 +19,9 @@ const albertSans = Albert_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Gugramas - Paisagismo e Jardinagem | Chapada-RS",
+  title: "Gugramas - Comércio, Plantio e Manutenção de Gramados",
   description:
-    "Especialistas em plantio, venda e manutenção de gramas. Oferecemos arranjos florais, paisagismo completo e criação de jardins. Localizados em Chapada-RS.",
+    "A Gugramas é uma empresa especializada em comércio e plantio de gramado residenciais, industriais, esportivo e rodoviário. Localizada em Chapada-RS, atende todo o Rio Grande do Sul e Santa Catarina levando o melhor custo benefício e eficiência até sua obra. solicite seu orçamento",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

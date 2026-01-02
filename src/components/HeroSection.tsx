@@ -75,12 +75,10 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center lg:justify-end mt-6">
-          <div className="w-4/5 flex justify-center">
-            <p className="text-sm md:text-base text-dark-green-text text-center font-albert-sans font-normal italic">
-              Arraste para ver antes e depois
-            </p>
-          </div>
+        <div className="w-4/5 mx-auto lg:mx-0 lg:ml-120 mt-6">
+          <p className="text-sm md:text-base text-dark-green-text text-center font-albert-sans font-normal italic">
+            Arraste para ver antes e depois
+          </p>
         </div>
       </div>
       <div className="w-screen relative left-1/2 -ml-[50vw] mt-8">
