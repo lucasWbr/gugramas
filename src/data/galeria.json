@@ -233,18 +233,21 @@
     "id": 31,
     "titulo": "Rodovia em erosão",
     "tipoDeGrama": "esmeralda",
-    "temAntesDepois": false,
-    "imagens": [
-      "/images/gallery/Erosão e Funcionalidade/Ers330.HEIC",
-      "/images/gallery/Erosão e Funcionalidade/Era330.HEIC",
-      "/images/gallery/Erosão e Funcionalidade/Ers 330.HEIC",
-      "/images/gallery/Erosão e Funcionalidade/Ers330(1).HEIC",
-      "/images/gallery/Erosão e Funcionalidade/Ers330(2).HEIC",
-      "/images/gallery/Erosão e Funcionalidade/Ers buraco .HEIC",
-      "/images/gallery/Erosão e Funcionalidade/Ers.JPG",
-      "/images/gallery/Erosão e Funcionalidade/Ers(1).JPG"
-    ]
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Erosão e Funcionalidade/Ers330(1).HEIC",
+    "imagemDepois": "/images/gallery/Erosão e Funcionalidade/Ers buraco .HEIC",
+    "imagens": []
   },
+  {
+    "id": 32,
+    "titulo": "Rodovia em erosão",
+    "tipoDeGrama": "esmeralda",
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Erosão e Funcionalidade/Era330.HEIC",
+    "imagemDepois": "/images/gallery/Erosão e Funcionalidade/Ers330.HEIC",
+    "imagens": []
+  },
+
   {
     "id": 34,
     "titulo": "Comércio - Manutenção",
@@ -258,11 +261,8 @@
     "tipoDeGrama": "esmeralda",
     "temAntesDepois": false,
     "imagens": [
-      "/images/gallery/Erosão e Funcionalidade/Whey 2",
       "/images/gallery/Erosão e Funcionalidade/Whey.JPG",
       "/images/gallery/Erosão e Funcionalidade/Whey(1).JPG",
-      "/images/gallery/Erosão e Funcionalidade/Whey caixa antes",
-      "/images/gallery/Erosão e Funcionalidade/Whey caixa depois",
       "/images/gallery/Erosão e Funcionalidade/Whey drone.PNG",
       "/images/gallery/Erosão e Funcionalidade/Whey ete 2.jpg",
       "/images/gallery/Erosão e Funcionalidade/Whey ETE.jpg",
