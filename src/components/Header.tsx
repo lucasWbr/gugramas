@@ -46,7 +46,7 @@ export default function Header() {
       className={`py-2 transition-all duration-300 ${
         isScrolled
           ? "bg-white fixed top-0 left-0 right-0 z-50"
-          : "bg-white relative"
+          : "bg-white relative z-50"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between xl:justify-between gap-4">

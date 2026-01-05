@@ -62,8 +62,8 @@ export default function HeroSection() {
           </div>
 
           <div className="flex-1 w-full relative">
-            <div className="absolute top-4 right-[-12] lg:right-[-12] w-4/5 lg:w-4/5 mx-auto lg:mx-0 lg:ml-auto h-full bg-[#002210] rounded-2xl -z-10"></div>
-            <div className="relative rounded-2xl h-128 w-4/5 mx-auto lg:mx-0 lg:ml-auto overflow-hidden">
+            <div className="absolute top-4 right-[-12] lg:right-[-12] w-full md:w-11/12 lg:w-4/5 mx-auto lg:mx-0 lg:ml-auto h-full bg-[#002210] rounded-2xl -z-10"></div>
+            <div className="relative rounded-2xl h-64 md:h-96 lg:h-128 w-full md:w-11/12 lg:w-4/5 mx-auto lg:mx-0 lg:ml-auto overflow-hidden">
               <BeforeAfterSlider
                 beforeImage="/images/gallery/Antes e Depois Paisagismo/Jé piscina depois.jpg"
                 afterImage="/images/gallery/Antes e Depois Paisagismo/Jé pis dps.jpg"
@@ -75,7 +75,7 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-        <div className="w-4/5 mx-auto lg:mx-0 lg:ml-120 mt-6">
+        <div className="w-full md:w-11/12 lg:w-4/5 mx-auto lg:mx-0 lg:ml-120 mt-6">
           <p className="text-sm md:text-base text-dark-green-text text-center font-albert-sans font-normal italic">
             Arraste para ver antes e depois
           </p>

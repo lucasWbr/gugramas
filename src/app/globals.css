@@ -83,13 +83,13 @@ html {
 /* Em telas menores, aumentamos o overlap para sobrepor mais o pageEnd */
 @media (max-width: 768px) {
   .page-end-overlap {
-    margin-top: -65px; /* Aumentado para sobrepor mais o pageEnd em telas menores */
+    margin-top: -80px; /* Aumentado para sobrepor mais o pageEnd em telas menores */
   }
 }
 
 /* Em telas muito pequenas, aumentamos ainda mais o overlap */
 @media (max-width: 480px) {
   .page-end-overlap {
-    margin-top: -50px; /* Aumentado ainda mais para sobrepor mais o pageEnd em telas muito pequenas */
+    margin-top: -60px; /* Aumentado ainda mais para sobrepor mais o pageEnd em telas muito pequenas */
   }
 }
