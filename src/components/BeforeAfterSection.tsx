@@ -24,27 +24,26 @@ export default function AboutSection() {
 
             <div className="space-y-4 text-[#A6DF65] text-lg leading-relaxed font-albert-sans">
               <p>
-                A Gugramas é uma empresa especializada em comercio, plantio e
+                A Gugramas é uma empresa especializada em comércio, plantio e
                 manutenção de todo tipo de gramados, localizada no município de
-                Chapada-RS, atua a mais de 15 anos no mercado de gramas levando
+                Chapada-RS, atua há mais de 15 anos no mercado de gramas levando
                 compromisso e seriedade ao consumidor final. Teve início
                 atendendo a localidade de chapada e hoje atende as mais
                 diversificadas obras em todo o Rio Grande do Sul e região sul de
                 Santa Catarina.
               </p>
               <p>
-                Conta com uma equipe própria, experiente e capacitada atuando a
+                Conta com uma equipe própria, experiente e capacitada atuando há
                 anos no mercado com compromisso e pontualidade nos projetos.
-                Trabalhamos atendendo desde pequenas obras residências visando a
-                estética e bem estar do cliente, até grandes obras industriais,
-                comerciais e rodoviárias, tendo em vista sempre atender as
-                necessidades individuais de cada cliente.
+                Trabalhamos atendendo desde pequenas obras residenciais visando
+                a estética e bem estar do cliente, até grandes obras
+                industriais, comerciais e rodoviárias, tendo em vista sempre
+                atender as necessidades individuais de cada cliente.
               </p>
               <p>
                 Contamos também com frota própria para deslocamento, fretes e
                 descarregamento da grama de forma mecanizada, visando manter o
-                compromisso com a pontualidade e a qualidade do produto até o
-                consumidor final.
+                compromisso com a pontualidade e a qualidade do produto.
               </p>
             </div>
           </div>

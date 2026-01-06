@@ -44,36 +44,36 @@ export default function ServicesSection() {
               <p>
                 Trabalhamos das mais diversas formas, buscando atender a
                 necessidade particular do consumidor final, podendo apenas
-                fornecer o produto, fornecer e entregar no local combinado, ou
-                até mesmo sistema completo de plantio de grama, que inclui:
+                fornecer o produto e entregar no local combinado, ou até mesmo
+                sistema completo de plantio de grama, que inclui:
                 <span className="font-bold">
                   {" "}
                   Estudo da viabilidade de execução
                 </span>{" "}
-                para verificar possíveis irregularidades e desafios do projeto.
+                para verificar possíveis irregularidades e desafios do projeto;
                 <span className="font-bold">
                   {" "}
                   Aptidão ao tipo de solo e escolha do tipo da grama
-                </span>
-                : extremamente necessário conhecer o local de plantio para
-                verificar horas luz, umidade, sombreamento e necessidade que o
+                </span>{" "}
+                — extremamente necessário conhecer o local de plantio para
+                verificar horas-luz, umidade, sombreamento e necessidade que o
                 plantio da grama busca solucionar.
               </p>
               <p>
                 {" "}
                 <span className="font-bold">Retirada de escombros</span>, restos
-                de matérias e qualquer resíduo que possa atrapalhar o
-                enraizamento e estética do gramado.{" "}
+                de materiais e qualquer resíduo que possa atrapalhar o
+                enraizamento e estética do gramado;{" "}
                 <span className="font-bold">
                   Avaliar a necessidade do uso de herbicidas para controlar o
                   crescimento de ervas daninhas
                 </span>
                 , invasoras ou qualquer planta que possa comprometer fisicamente
-                o gramado. <span className="font-bold">Preparo do solo</span>:
+                o gramado; <span className="font-bold">Preparo do solo</span>:
                 após a análise laboratorial são incorporados os matérias
                 necessário para dar plenas condições ao gramado enraizar e
                 crescer de forma saudável e vistoso, material esse podendo ser
-                químico ou orgânico.{" "}
+                químico ou orgânico;{" "}
                 <span className="font-bold">Nivelamento</span> manual ou
                 mecânico dependendo do tamanho do projeto.
               </p>
@@ -82,7 +82,7 @@ export default function ServicesSection() {
                 <span className="font-bold">Plantio da grama</span> de forma
                 manual, atento aos detalhes e acabamentos de forma ágil visando
                 a necessidade de plantio imediato para não perder a qualidade do
-                produto.{" "}
+                produto;{" "}
                 <span className="font-bold">Manutenção do gramado</span>,
                 atendendo de forma humanizada todas as necessidades do cliente
                 para garantir um gramado de qualidade. Além disso trabalhamos
@@ -95,7 +95,7 @@ export default function ServicesSection() {
           <div className="flex-1 flex flex-col gap-4">
             <div className="rounded-2xl flex-1 overflow-hidden relative min-h-[200px]">
               <Image
-                src="/images/gallery/Erosão e Funcionalidade/Carga.JPG"
+                src="/images/gallery/Erosão e Funcionalidade/services1.png"
                 alt="Serviço 1"
                 fill
                 className="object-cover"
