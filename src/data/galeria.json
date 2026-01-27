@@ -80,16 +80,6 @@
     "imagens": []
   },
   {
-    "id": 9,
-    "titulo": "Residência - Fundos Antes e Depois",
-    "tipoDeGrama": "sao-carlos",
-    "tipoObra": "residencial",
-    "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Jé fundos antes.png",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Je fundos depois (1).png",
-    "imagens": []
-  },
-  {
     "id": 10,
     "titulo": "Residência - Frente Antes e Depois",
     "tipoDeGrama": "sao-carlos",
