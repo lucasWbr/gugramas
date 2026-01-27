@@ -66,22 +66,6 @@ export default function BeforeAfterSlider({
   // Quando tem zoom, usa object-contain para não cortar (a menos que forceCover seja true)
   const shouldUseContain = !forceCover && (imageScale > 1 || areImagesSameSize);
 
-  // Verifica se a imagem é HEIC
-  const isHEIC = (src: string | StaticImageData): boolean => {
-    if (typeof src === "string") {
-      return src.toLowerCase().endsWith(".heic") || src.toLowerCase().includes(".heic");
-    }
-    return false;
-  };
-
-  // Converte caminho HEIC para usar a API de conversão
-  const getConvertedHEICPath = (src: string): string => {
-    if (isHEIC(src)) {
-      return `/api/convert-heic?path=${encodeURIComponent(src)}`;
-    }
-    return src;
-  };
-
   // Handler para quando a imagem carrega
   const handleImageLoad = useCallback((type: "before" | "after", e: React.SyntheticEvent<HTMLImageElement>) => {
     const img = e.target as HTMLImageElement;
@@ -94,21 +78,11 @@ export default function BeforeAfterSlider({
   // Handler para erro de imagem
   const handleImageError = useCallback((type: "before" | "after", e: React.SyntheticEvent<HTMLImageElement>) => {
     const target = e.target as HTMLImageElement;
-    const src = type === "before" ? beforeImage : afterImage;
     
-    // Se for HEIC e ainda não tentou a API, tenta usar a API de conversão
-    if (typeof src === "string" && isHEIC(src)) {
-      const convertedPath = isHEIC(src) ? `/api/convert-heic?path=${encodeURIComponent(src)}` : src;
-      if (target.src !== convertedPath && !target.src.includes("/api/convert-heic")) {
-        target.src = convertedPath;
-        return; // Retorna para tentar carregar a versão convertida
-      }
-    }
-    
-    // Se todas as tentativas falharam, marca como erro e mostra placeholder
+    // Marca como erro e mostra placeholder
     setImageErrors((prev) => ({ ...prev, [type]: true }));
     target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%23A6DF65' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23002210' font-size='14'%3EErro ao carregar imagem%3C/text%3E%3C/svg%3E";
-  }, [beforeImage, afterImage]);
+  }, []);
 
   const handleMouseMove = useCallback((e: MouseEvent) => {
     if (!containerRef.current || !isDragging) return;
@@ -182,43 +156,24 @@ export default function BeforeAfterSlider({
             </div>
           </div>
         )}
-        {typeof afterImage === "string" && isHEIC(afterImage) ? (
-          <img
-            src={getConvertedHEICPath(afterImage)}
-            alt={afterLabel}
-            className={`absolute inset-0 w-full h-full ${shouldUseContain ? "object-contain" : "object-cover"}`}
-            draggable={false}
-            style={{ 
-              userSelect: "none", 
-              pointerEvents: "none",
-              opacity: imageErrors.after ? 0 : 1,
-              transform: imageScale > 1 ? `scale(${imageScale})` : "none",
-              transformOrigin: "center center",
-              transition: "transform 0.3s ease-in-out"
-            }}
-            onLoad={(e) => handleImageLoad("after", e)}
-            onError={(e) => handleImageError("after", e)}
-          />
-        ) : (
-          <Image
-            src={afterImage}
-            alt={afterLabel}
-            fill
-            className={shouldUseContain ? "object-contain" : "object-cover"}
-            priority
-            draggable={false}
-            style={{ 
-              userSelect: "none", 
-              pointerEvents: "none",
-              opacity: imageErrors.after ? 0 : 1,
-              transform: imageScale > 1 ? `scale(${imageScale})` : "none",
-              transformOrigin: "center center",
-              transition: "transform 0.3s ease-in-out"
-            }}
-            onLoad={(e) => handleImageLoad("after", e)}
-            onError={(e) => handleImageError("after", e)}
-          />
-        )}
+        <Image
+          src={afterImage}
+          alt={afterLabel}
+          fill
+          className={shouldUseContain ? "object-contain" : "object-cover"}
+          priority
+          draggable={false}
+          style={{ 
+            userSelect: "none", 
+            pointerEvents: "none",
+            opacity: imageErrors.after ? 0 : 1,
+            transform: imageScale > 1 ? `scale(${imageScale})` : "none",
+            transformOrigin: "center center",
+            transition: "transform 0.3s ease-in-out"
+          }}
+          onLoad={(e) => handleImageLoad("after", e)}
+          onError={(e) => handleImageError("after", e)}
+        />
       </div>
 
       {/* Imagem "Antes" (sobreposta com clip) */}
@@ -235,43 +190,24 @@ export default function BeforeAfterSlider({
             </div>
           </div>
         )}
-        {typeof beforeImage === "string" && isHEIC(beforeImage) ? (
-          <img
-            src={getConvertedHEICPath(beforeImage)}
-            alt={beforeLabel}
-            className={`absolute inset-0 w-full h-full ${shouldUseContain ? "object-contain" : "object-cover"}`}
-            draggable={false}
-            style={{ 
-              userSelect: "none", 
-              pointerEvents: "none",
-              opacity: imageErrors.before ? 0 : 1,
-              transform: imageScale > 1 ? `scale(${imageScale})` : "none",
-              transformOrigin: "center center",
-              transition: "transform 0.3s ease-in-out"
-            }}
-            onLoad={(e) => handleImageLoad("before", e)}
-            onError={(e) => handleImageError("before", e)}
-          />
-        ) : (
-          <Image
-            src={beforeImage}
-            alt={beforeLabel}
-            fill
-            className={shouldUseContain ? "object-contain" : "object-cover"}
-            priority
-            draggable={false}
-            style={{ 
-              userSelect: "none", 
-              pointerEvents: "none",
-              opacity: imageErrors.before ? 0 : 1,
-              transform: imageScale > 1 ? `scale(${imageScale})` : "none",
-              transformOrigin: "center center",
-              transition: "transform 0.3s ease-in-out"
-            }}
-            onLoad={(e) => handleImageLoad("before", e)}
-            onError={(e) => handleImageError("before", e)}
-          />
-        )}
+        <Image
+          src={beforeImage}
+          alt={beforeLabel}
+          fill
+          className={shouldUseContain ? "object-contain" : "object-cover"}
+          priority
+          draggable={false}
+          style={{ 
+            userSelect: "none", 
+            pointerEvents: "none",
+            opacity: imageErrors.before ? 0 : 1,
+            transform: imageScale > 1 ? `scale(${imageScale})` : "none",
+            transformOrigin: "center center",
+            transition: "transform 0.3s ease-in-out"
+          }}
+          onLoad={(e) => handleImageLoad("before", e)}
+          onError={(e) => handleImageError("before", e)}
+        />
       </div>
 
       {/* Linha divisória */}

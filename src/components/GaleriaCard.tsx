@@ -33,19 +33,6 @@ export default function GaleriaCard({ item }: GaleriaCardProps) {
     ? item.imagemDepois
     : item.imagens[0] || "/images/gallery/placeholder.png";
 
-  // Verifica se a imagem é HEIC
-  const isHEIC = (src: string): boolean => {
-    return src.toLowerCase().endsWith(".heic") || src.toLowerCase().includes(".heic");
-  };
-
-  // Converte caminho HEIC para usar a API de conversão
-  const getConvertedHEICPath = (src: string): string => {
-    if (isHEIC(src)) {
-      return `/api/convert-heic?path=${encodeURIComponent(src)}`;
-    }
-    return src;
-  };
-
   const getIcon = (tipo: string) => {
     return tipo === "sao-carlos" ? leafIcon : grassIcon;
   };
@@ -65,34 +52,19 @@ export default function GaleriaCard({ item }: GaleriaCardProps) {
             <Throbber />
           </div>
         )}
-        {isHEIC(previewImage) ? (
-          <img
-            src={getConvertedHEICPath(previewImage)}
-            alt={item.titulo}
-            className={`absolute inset-0 w-full h-full object-cover ${imageLoading ? "opacity-0" : "opacity-100"} transition-opacity duration-300`}
-            onLoad={() => setImageLoading(false)}
-            onError={(e) => {
-              setImageLoading(false);
-              setImageError(true);
-              const target = e.target as HTMLImageElement;
-              target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%23A6DF65' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23002210' font-size='20'%3EImagem%3C/text%3E%3C/svg%3E";
-            }}
-          />
-        ) : (
-          <Image
-            src={previewImage}
-            alt={item.titulo}
-            fill
-            className={`object-cover ${imageLoading ? "opacity-0" : "opacity-100"} transition-opacity duration-300`}
-            onLoad={() => setImageLoading(false)}
-            onError={(e) => {
-              setImageLoading(false);
-              setImageError(true);
-              const target = e.target as HTMLImageElement;
-              target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%23A6DF65' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23002210' font-size='20'%3EImagem%3C/text%3E%3C/svg%3E";
-            }}
-          />
-        )}
+        <Image
+          src={previewImage}
+          alt={item.titulo}
+          fill
+          className={`object-cover ${imageLoading ? "opacity-0" : "opacity-100"} transition-opacity duration-300`}
+          onLoad={() => setImageLoading(false)}
+          onError={(e) => {
+            setImageLoading(false);
+            setImageError(true);
+            const target = e.target as HTMLImageElement;
+            target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%23A6DF65' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23002210' font-size='20'%3EImagem%3C/text%3E%3C/svg%3E";
+          }}
+        />
       </div>
       <div className="p-4">
         <div className="flex items-center gap-2 mb-2">

@@ -12,19 +12,6 @@ interface ImageGridProps {
 export default function ImageGrid({ imagens, titulo }: ImageGridProps) {
   const [loadingImages, setLoadingImages] = useState<Set<number>>(new Set(imagens.map((_, index) => index)));
 
-  // Verifica se a imagem é HEIC
-  const isHEIC = (src: string): boolean => {
-    return src.toLowerCase().endsWith(".heic") || src.toLowerCase().includes(".heic");
-  };
-
-  // Converte caminho HEIC para usar a API de conversão
-  const getConvertedHEICPath = (src: string): string => {
-    if (isHEIC(src)) {
-      return `/api/convert-heic?path=${encodeURIComponent(src)}`;
-    }
-    return src;
-  };
-
   const handleImageLoad = (index: number) => {
     setLoadingImages((prev) => {
       const next = new Set(prev);
@@ -58,24 +45,14 @@ export default function ImageGrid({ imagens, titulo }: ImageGridProps) {
               <Throbber />
             </div>
           )}
-          {isHEIC(imagem) ? (
-            <img
-              src={getConvertedHEICPath(imagem)}
-              alt={`${titulo} - Imagem ${index + 1}`}
-              className={`absolute inset-0 w-full h-full ${objectFitClass} ${loadingImages.has(index) ? "opacity-0" : "opacity-100"} transition-opacity duration-300`}
-              onLoad={() => handleImageLoad(index)}
-              onError={(e) => handleImageError(index, e)}
-            />
-          ) : (
-            <Image
-              src={imagem}
-              alt={`${titulo} - Imagem ${index + 1}`}
-              fill
-              className={`${objectFitClass} ${loadingImages.has(index) ? "opacity-0" : "opacity-100"} transition-opacity duration-300`}
-              onLoad={() => handleImageLoad(index)}
-              onError={(e) => handleImageError(index, e)}
-            />
-          )}
+          <Image
+            src={imagem}
+            alt={`${titulo} - Imagem ${index + 1}`}
+            fill
+            className={`${objectFitClass} ${loadingImages.has(index) ? "opacity-0" : "opacity-100"} transition-opacity duration-300`}
+            onLoad={() => handleImageLoad(index)}
+            onError={(e) => handleImageError(index, e)}
+          />
         </div>
       ))}
     </div>

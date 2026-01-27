@@ -5,8 +5,8 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Alves antes .JPG",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Alves depois.JPG",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Alves antes .png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Alves depois.png",
     "imagens": []
   },
   {
@@ -15,8 +15,8 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Andressa antes.JPG",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Andressa depois.JPG",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Andressa antes.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Andressa depois.png",
     "imagens": []
   },
   {
@@ -25,8 +25,8 @@
     "tipoDeGrama": "esmeralda",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Cássio antes.HEIC",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Cássio depois .HEIC",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Cássio antes.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Cássio depois .png",
     "imagens": []
   },
   {
@@ -34,8 +34,10 @@
     "titulo": "Residência",
     "tipoDeGrama": "esmeralda",
     "tipoObra": "residencial",
-    "temAntesDepois": false,
-    "imagens": ["/images/gallery/Antes e Depois Paisagismo/Dani depois.HEIC"]
+    "temAntesDepois": true,
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Dani antes.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Dani depois.png",
+    "imagens": []
   },
   {
     "id": 5,
@@ -43,8 +45,8 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Danigay antes.JPG",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Danigay depois.JPG",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Danigay antes.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Danigay depois.png",
     "imagens": []
   },
   {
@@ -53,8 +55,8 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Fidla antes.HEIC",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Fidla depois .HEIC",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Fidla antes.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Fidla depois .png",
     "imagens": []
   },
   {
@@ -63,8 +65,8 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Fio antes.JPG",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Fio depois.JPG",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Fio antes.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Fio depois.png",
     "imagens": []
   },
   {
@@ -73,8 +75,8 @@
     "tipoDeGrama": "esmeralda",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Fraida antes.jpg",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Fraida depois.jpg",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Fraida antes.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Fraida depois.png",
     "imagens": []
   },
   {
@@ -83,8 +85,8 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Jé fundos antes.JPG",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Je fundos depois.jpg",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Jé fundos antes.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Je fundos depois.png",
     "imagens": []
   },
   {
@@ -93,8 +95,8 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Jé frente antes.JPG",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Je frente depois.jpg",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Jé frente antes.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Je frente depois.png",
     "imagens": []
   },
   {
@@ -103,8 +105,8 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Jé piscina depois.jpg",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Jé pis dps.jpg",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Jé piscina depois.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Jé pis dps.png",
     "imagens": []
   },
   {
@@ -113,8 +115,8 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Jorge antes.JPG",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Jorge depois.JPG",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Jorge antes.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Jorge depois.png",
     "imagens": []
   },
   {
@@ -123,8 +125,8 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Júnior antes.HEIC",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Júnior depois.HEIC",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Júnior antes.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Júnior depois.png",
     "imagens": []
   },
   {
@@ -133,7 +135,7 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "residencial",
     "temAntesDepois": false,
-    "imagens": ["/images/gallery/Antes e Depois Paisagismo/Praça palmeira.jpg"]
+    "imagens": ["/images/gallery/Antes e Depois Paisagismo/Praça palmeira.png"]
   },
   {
     "id": 15,
@@ -141,8 +143,8 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Mariela(1).HEIC",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Marieladps .HEIC",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Mariela antes.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Mariela depois.png",
     "imagens": []
   },
   {
@@ -151,8 +153,8 @@
     "tipoDeGrama": "esmeralda",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Palmeira antes.JPG",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Palmeira depois.JPG",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Palmeira antes.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Palmeira depois.png",
     "imagens": []
   },
   {
@@ -161,8 +163,8 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Pinto depois.HEIC",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Pinto antes.HEIC",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Pinto-antes.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Pinto-depois.png",
     "imagens": []
   },
   {
@@ -171,8 +173,8 @@
     "tipoDeGrama": "esmeralda",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Rech antes.HEIC",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Rech depois.HEIC",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Rech antes.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Rech depois.png",
     "imagens": []
   },
   {
@@ -181,8 +183,8 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "industria",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Sicredi antes.JPG",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Sicredi depois.JPG",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Sicredi antes.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Sicredi depois.png",
     "imagens": []
   },
   {
@@ -191,8 +193,8 @@
     "tipoDeGrama": "esmeralda",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Tarcísio antes.jpg",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Tarcísio depois.jpg",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Tarcísio antes.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Tarcísio depois.png",
     "imagens": []
   },
   {
@@ -201,8 +203,8 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Tesouras antes.HEIC",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Tesouras depois.HEIC",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Tesouras depois.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Tesouras antes.png",
     "imagens": []
   },
   {
@@ -211,8 +213,8 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Toisso depois.jpg",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Toisso antes.jpg",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Toisso antes.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Toisso depois.png",
     "imagens": []
   },
   {
@@ -221,8 +223,8 @@
     "tipoDeGrama": "esmeralda",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Ximite antes frente.jpg",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Ximite depois.HEIC",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Ximite antes frente.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Ximite depois.png",
     "imagens": []
   },
   {
@@ -231,8 +233,8 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Ximite antes fundos.HEIC",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Ximite depois fundos.HEIC",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Ximite antes fundos.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Ximite depois fundos.png",
     "imagens": []
   },
   {
@@ -241,8 +243,8 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Ximite antes piscina.HEIC",
-    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Ximite depois piscina.HEIC",
+    "imagemAntes": "/images/gallery/Antes e Depois Paisagismo/Ximite antes piscina.png",
+    "imagemDepois": "/images/gallery/Antes e Depois Paisagismo/Ximite depois piscina.png",
     "imagens": []
   },
   {
@@ -251,8 +253,8 @@
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "residencial",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Erosão e Funcionalidade/Campo.JPG",
-    "imagemDepois": "/images/gallery/Erosão e Funcionalidade/Campo pronto.JPG",
+    "imagemAntes": "/images/gallery/Erosão e Funcionalidade/Campo.png",
+    "imagemDepois": "/images/gallery/Erosão e Funcionalidade/Campo-pronto.png",
     "imagens": []
   },
   {
@@ -261,28 +263,27 @@
     "tipoDeGrama": "esmeralda",
     "tipoObra": "rodovia",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Erosão e Funcionalidade/Ers330(1).HEIC",
-    "imagemDepois": "/images/gallery/Erosão e Funcionalidade/Ers buraco .HEIC",
+    "imagemAntes": "/images/gallery/Erosão e Funcionalidade/Ers330.png",
+    "imagemDepois": "/images/gallery/Erosão e Funcionalidade/Ersburaco.png",
     "imagens": []
   },
   {
     "id": 32,
-    "titulo": "Rodovia - Antes e Depois",
-    "tipoDeGrama": "sao-carlos",
-    "tipoObra": "rodovia",
+    "titulo": "Indústria - Antes e Depois",
+    "tipoDeGrama": "esmeralda",
+    "tipoObra": "industria",
     "temAntesDepois": true,
-    "imagemAntes": "/images/gallery/Erosão e Funcionalidade/Era330.HEIC",
-    "imagemDepois": "/images/gallery/Erosão e Funcionalidade/Ers330.HEIC",
+    "imagemAntes": "/images/gallery/Whey/Whey talude antes.png",
+    "imagemDepois": "/images/gallery/Whey/Whey talude depois.png",
     "imagens": []
   },
-
   {
     "id": 34,
     "titulo": "Comércio - Manutenção",
     "tipoDeGrama": "sao-carlos",
     "tipoObra": "industria",
     "temAntesDepois": false,
-    "imagens": ["/images/gallery/Erosão e Funcionalidade/Manutenção bb.jpg"]
+    "imagens": ["/images/gallery/Erosão e Funcionalidade/Manutenção bb.png"]
   },
   {
     "id": 35,
@@ -291,13 +292,13 @@
     "tipoObra": "industria",
     "temAntesDepois": false,
     "imagens": [
-      "/images/gallery/Whey/Whey.JPG",
-      "/images/gallery/Whey/Whey ete 2.jpg",
-      "/images/gallery/Whey/Whey ETE.jpg",
-      "/images/gallery/Whey/Whey talude antes.jpg",
-      "/images/gallery/Whey/Whey talude depois.HEIC",
-      "/images/gallery/Whey/Whey talude depois.jpg",
-      "/images/gallery/Whey/Whey_.jpg"
+      "/images/gallery/Whey/Whey talude depois .png",
+      "/images/gallery/Whey/Whey.png",
+      "/images/gallery/Whey/Whey ete 2.png",
+      "/images/gallery/Whey/Whey ETE.png",
+      "/images/gallery/Whey/Whey talude antes.png",
+      "/images/gallery/Whey/Whey talude depois.png",
+      "/images/gallery/Whey/Whey .png"
     ]
   },
   {
@@ -307,15 +308,7 @@
     "tipoObra": "rodovia",
     "temAntesDepois": false,
     "imagens": [
-      "/images/gallery/Ers/Ers.JPG",
-      "/images/gallery/Ers/Ers(1).JPG",
-      "/images/gallery/Ers/Ers(2).JPG",
-      "/images/gallery/Ers/Era330.HEIC",
-      "/images/gallery/Ers/Ers 330.HEIC",
-      "/images/gallery/Ers/Ers buraco .HEIC",
-      "/images/gallery/Ers/Ers330.HEIC",
-      "/images/gallery/Ers/Ers330(1).HEIC",
-      "/images/gallery/Ers/Ers330(2).HEIC",
+      "/images/gallery/Erosão e Funcionalidade/services1.png",
       "/images/gallery/Ers/Ers330.PNG",
       "/images/gallery/Ers/Ers330(1).PNG",
       "/images/gallery/Ers/Ers330(2).PNG",
