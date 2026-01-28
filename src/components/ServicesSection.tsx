@@ -103,7 +103,7 @@ export default function ServicesSection() {
             </div>
             <div className="rounded-2xl flex-1 overflow-hidden relative min-h-[200px]">
               <Image
-                src="/images/gallery/Antes e Depois Paisagismo/WhatsApp Image 2025-12-29 at 09.13.07.jpeg"
+                src="/images/gallery/Erosão e Funcionalidade/Ersburaco.png"
                 alt="Serviço 2"
                 fill
                 className="object-cover"

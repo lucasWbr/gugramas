@@ -3,7 +3,7 @@ import Link from "next/link";
 import grassIcon from "@/assets/images/icons/grass.svg";
 import leafIcon from "@/assets/images/icons/leaf.svg";
 import pageEndIcon from "@/assets/images/icons/pageEnd.svg";
-import gramaSaoCarlosImage from "@/assets/images/index/gramaSãoCarlos.png";
+import gramaSaoCarlosImage from "@/assets/images/index/sao-carlos-com-site.jpg";
 import gramaEsmeraldaImage from "@/assets/images/index/gramaEsmeralda.png";
 
 export default function TypesOfGrassSection() {

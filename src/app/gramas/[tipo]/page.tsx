@@ -5,7 +5,7 @@ import Link from "next/link";
 import pageEndIcon from "@/assets/images/icons/pageEnd.svg";
 import grassIcon from "@/assets/images/icons/grass.svg";
 import leafIcon from "@/assets/images/icons/leaf.svg";
-import gramaSaoCarlosImage from "@/assets/images/index/gramaSãoCarlos.png";
+import gramaSaoCarlosImage from "@/assets/images/index/sao-carlos-com-site.jpg";
 import gramaEsmeraldaImage from "@/assets/images/index/gramaEsmeralda.png";
 
 interface GrassData {
@@ -36,7 +36,7 @@ const grassData: Record<string, GrassData> = {
           "Cor: Verde médio a escuro, com folhas mais largas e robustas.",
           "Folhas: Mais grossas e resistentes, com textura mais rústica.",
           "Crescimento: Rápido e agressivo, formando um tapete denso e uniforme.",
-          "Tolerância: Muito resistente ao pisoteio intenso e ao tráfego. Adapta-se bem a diferentes tipos de solo. Suporta bem o sol e a meia-sombra.",
+          "Tolerância: Razoavelmente resistente ao pisoteio intenso e ao tráfego. Adapta-se bem a diferentes tipos de solo. Suporta bem o sol e a meia-sombra.",
           "Manutenção: Por crescer rápido, demanda cortes mais frequentes. É mais tolerante a solos menos férteis.",
         ],
       },
@@ -44,7 +44,7 @@ const grassData: Record<string, GrassData> = {
     melhorPara: {
       titulo: "Melhor para:",
       itens: [
-        "Áreas de alto tráfego (jardins com crianças, áreas de lazer, campos esportivos).",
+        "Áreas semi-sombreadas (jardins, áreas de lazer, campos esportivos).",
         "Locais onde a resistência e durabilidade são prioridades.",
         "Projetos que precisam de cobertura rápida do solo.",
         "Quem busca uma grama que aguenta mais uso e requer menos cuidados com o solo.",
@@ -67,6 +67,7 @@ const grassData: Record<string, GrassData> = {
           "Crescimento: Mais lento e em moita, formando um tapete muito uniforme e bonito.",
           "Tolerância: Resistente a pragas e ervas daninhas. Tolera bem o frio. Suporta pisoteio moderado.",
           "Manutenção: Por crescer devagar, demanda menos cortes. Requer solo mais fértil e adubado para se desenvolver plenamente.",
+          "Possui raíz rizomatosa que armazena nutrientes e permite a propagação vegetativa.",
         ],
       },
     ],
@@ -77,6 +78,7 @@ const grassData: Record<string, GrassData> = {
         "Áreas de contemplação (entrada de casa, bordas de piscina, jardim frontal).",
         "Projetos de paisagismo que exigem um visual impecável e uniforme.",
         "Quem prefere um jardim bonito com um pouco menos de frequência de corte.",
+        "Contenções de taludes para evitar erosão de solo",
       ],
     },
     conclusao:

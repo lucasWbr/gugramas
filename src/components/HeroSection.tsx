@@ -55,9 +55,11 @@ export default function HeroSection() {
             <p className="text-lg md:text-xl text-dark-green-text mb-6 leading-relaxed font-albert-sans font-normal">
               Na <span className="font-extrabold">Gugramas</span>, trazemos a
               natureza para o seu ambiente com qualidade, dedicação e expertise.
-              Especialistas em plantio, venda e manutenção de gramas, oferecemos
-              também arranjos florais, paisagismo completo e criação de jardins
-              que transformam qualquer espaço em um refúgio de beleza e paz.
+              Especialistas em plantio, venda e manutenção de gramas atendemos
+              obras residencias, industriais, comerciais e rodoviárias.
+              Oferecemos também, em parceria com a Floricultura Girassol,
+              paisagismo completo e criação de jardins que transformam qualquer
+              espaço em um refúgio de beleza e paz.
             </p>
           </div>
 
@@ -65,8 +67,8 @@ export default function HeroSection() {
             <div className="absolute top-4 right-[-12] lg:right-[-12] w-full md:w-11/12 lg:w-4/5 mx-auto lg:mx-0 lg:ml-auto h-full bg-[#002210] rounded-2xl -z-10"></div>
             <div className="relative rounded-2xl h-64 md:h-96 lg:h-128 w-full md:w-11/12 lg:w-4/5 mx-auto lg:mx-0 lg:ml-auto overflow-hidden">
               <BeforeAfterSlider
-                beforeImage="/images/gallery/Antes e Depois Paisagismo/heroBefore.png"
-                afterImage="/images/gallery/Antes e Depois Paisagismo/heroAfter.png"
+                beforeImage="/images/gallery/Antes e Depois Paisagismo/Jé frente antes.png"
+                afterImage="/images/gallery/Antes e Depois Paisagismo/Je frente depois.png"
                 beforeLabel="Antes"
                 afterLabel="Depois"
                 className="rounded-2xl"
